@@ -1,0 +1,1 @@
+In order for this code to run properly, the text.txt file must be in the same directory as the mkp2.py file.

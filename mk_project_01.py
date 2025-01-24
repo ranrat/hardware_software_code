@@ -20,10 +20,8 @@ def confirmation2():
 		print("Sorry, I couldn't understand that. Please type in 'questionone', 'questiontwo', or 'questionthree'.")
 		confirmation2()
 
-
-
-
 def fullinfo():
+	print()
 	print("Let's review. Your name is" + name + ".")
 	print("You are currently attending" + college + ".")
 	print("And you previously attended" + highschool + ".")
@@ -42,15 +40,13 @@ def confirmation():
 
 
 
-
-
 def questionthree():
 	global highschool
 	highschool = input("Which high school did you previously attend?")
-	print("You're previously attended {}. Is that right? Please type in 'yes' or 'no'." .format(highschool))
+	print("You've previously attended {}. Is that right? Please type in 'yes' or 'no'." .format(highschool))
 	answer = input()
 	if answer == "yes":
-		print("Great. Let's move on to the next question.")
+		print("Great. Let's move on to the next section.")
 		
 	elif answer == "no":
 		print("I'm sorry. Could you please type that one more time for me?")
@@ -61,15 +57,13 @@ def questionthree():
 
 
 
-
-
 def questiontwo():
 	global college
 	college = input("Which college are you currently attending?")
 	print("You're currently attending {}. Is that right? Please type in 'yes' or 'no'." .format(college))
 	answer = input()
 	if answer == "yes":
-		print("Great. Let's move on to the next question.")
+		print("Great. Let's move on to the next section.")
 		
 	elif answer == "no":
 		print("I'm sorry. Could you please type that one more time for me?")
@@ -85,7 +79,7 @@ def questionone():
 	print("Your name is {}. Did I get that right? Please type in 'yes' or 'no'." .format(name))
 	answer = input()
 	if answer == "yes":
-		print("Great. Let's move on to the next question.")
+		print("Great. Let's move on to the next section.")
 		
 	elif answer == "no":
 		print("I'm sorry. Could you please type that one more time for me?")
@@ -102,6 +96,7 @@ def main():
 	questionthree()
 	fullinfo()
 	confirmation()
+	print()
 	print("Thank you so much for conversing with me!")
 	print("Ciao!")
 
