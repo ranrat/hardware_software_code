@@ -4,13 +4,18 @@ def main():
 	num2 = input("Enter second number: ")
 	total = int(num1) + int(num2)
 	print("{} + {} = {}".format(num1, num2, total))
+	check()
 
-	print("Are you done adding?")
-	answer = input().lower().strip()
+	
+def check():
+	answer = input("Are you done adding?").lower().strip()
 	if answer == "yes":
-		print("Shutting down program.")
+		print("Thanks for adding!")
 	elif answer == "no":
 		main()
+	else:
+		print("Say that again?")
+		check()
 
 if __name__ == "__main__":
 	main()

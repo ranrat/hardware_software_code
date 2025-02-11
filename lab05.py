@@ -1,15 +1,11 @@
-def print_lyrics():
-	print ("I'm a programmer, and I'm okay.")
-	print ("I code all night, and I code all day.")
-def repeat_lyrics(count = 1):
-	for number in range(count):
-		print("{}############".format(number), end=".")
-		print_lyrics()
-		print("############")
-
+def greeting():
+	print("I can only stop if you type exit.")
+	print("Do you want me to stop")
+	print("Type exit then!")
+	return input ("I’m waiting!!! ").lower().strip()
 def main():
-	repeat_lyrics()
-	repeat_lyrics(4)
-
+	run_loop = greeting()
+	while run_loop != 'exit':
+		run_loop = greeting()
 if __name__ == "__main__":
 	main()
